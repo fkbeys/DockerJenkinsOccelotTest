@@ -13,19 +13,13 @@ namespace Contact.Api.Controllers
         {
             this.contactService = contactService;
         }
+         
 
-        [HttpGet]
-        public async Task<IActionResult> Getir()
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetContactById(int id)
         {
-            return Ok("calisti");
+            var result = await contactService.GetById(id);
+            return Ok(result);
         }
-
-
-        //[HttpGet]
-        //public async Task<IActionResult> GetContactById(int id)
-        //{
-        //    var result = await contactService.GetById(id);
-        //    return Ok(result);
-        //}
     }
 }

@@ -1,15 +1,15 @@
 {
   "Routes": [
     {
-      "DownstreamPathTemplate": "/api/Contact",
+      "DownstreamPathTemplate": "/api/Contact/{id}",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "jsonplaceholder.typicode.com",
+          "Host": "localhost",
           "Port": 7000
         }
       ],
-      "UpstreamPathTemplate": "/c",
+      "UpstreamPathTemplate": "/c/{id}",
       "UpstreamHttpMethod": [ "Get" ]
     } 
   ],

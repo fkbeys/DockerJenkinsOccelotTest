@@ -11,7 +11,21 @@
       ],
       "UpstreamPathTemplate": "/c/{id}",
       "UpstreamHttpMethod": [ "Get" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/Reserv/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 8000
+        }
+      ],
+      "UpstreamPathTemplate": "/r/{id}",
+      "UpstreamHttpMethod": [ "Get" ]
     } 
+
   ],
   "GlobalConfiguration": {
     "BaseUrl": "https://localhost:5000"

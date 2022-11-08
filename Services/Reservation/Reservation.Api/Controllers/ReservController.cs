@@ -13,8 +13,8 @@ namespace Reservation.Api
         {
             this.reservationService = reservationService;
         }
-
-        [HttpGet]
+         
+        [HttpGet("{id}")]
         public async Task<IActionResult> GetReservationById(int id)
         {
             var result = await reservationService.GetReservationById(id);

@@ -1,0 +1,45 @@
+version: '3.1'
+
+services:
+  s_api_gateway:
+    container_name: c_api_gateway
+    image: kaya/apigateway
+    build: 
+      context: .
+      dockerfile: ApiGateway/Dockerfile
+    ports: 
+      - 9000:9000
+    networks:
+      - micro_net
+      - int_net
+  
+  s_contact_api: c_contact_api
+    image: kaya/contactapi
+    build: 
+      context: .
+      dockerfile: Services/Contact/Contact.Api/Dockerfile
+    ports:
+      - 7000:7000
+    networks:
+      - int_net
+
+  s_reserv_api: c_reserv_api
+    image: kaya/reservapi
+    build: 
+      context: .
+      dockerfile: Services/Reservation/Reservation.Api/Dockerfile
+    ports:
+      - 8000:8000
+    networks:
+      - int_net
+
+
+
+
+
+networks:
+  int_net: 
+    driver: overlay
+    internal: true
+  micro_net:
+    driver: bridge 

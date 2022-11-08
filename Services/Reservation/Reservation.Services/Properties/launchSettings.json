@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "Reservation.Services": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:51971;http://localhost:51972"
+    }
+  }
+}

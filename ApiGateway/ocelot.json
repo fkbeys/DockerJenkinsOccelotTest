@@ -2,10 +2,10 @@
   "Routes": [
     {
       "DownstreamPathTemplate": "/api/Contact/{id}",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
+          "Host": "c_contact_api",
           "Port": 7000
         }
       ],
@@ -15,10 +15,10 @@
 
     {
       "DownstreamPathTemplate": "/api/Reserv/{id}",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
+          "Host": "c_reserv_api",
           "Port": 8000
         }
       ],

@@ -24,7 +24,7 @@
       ],
       "UpstreamPathTemplate": "/r/{id}",
       "UpstreamHttpMethod": [ "Get" ]
-    } 
+    }
 
   ],
   "GlobalConfiguration": {

@@ -18,6 +18,8 @@ namespace Contact.Api.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetContactById(int id)
         {
+
+            var ss = "";
             var result = await contactService.GetById(id);
             return Ok(result);
         }

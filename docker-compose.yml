@@ -8,7 +8,7 @@ services:
       context: .
       dockerfile: ApiGateway/Dockerfile
     ports: 
-      - 80:80
+      - 80:1000
     networks:
       - micro_net
       - int_net

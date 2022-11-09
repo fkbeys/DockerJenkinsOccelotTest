@@ -6,7 +6,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "c_contact_api",
-          "Port": 7000
+          "Port": 2000
         }
       ],
       "UpstreamPathTemplate": "/c/{id}",
@@ -19,7 +19,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "c_reserv_api",
-          "Port": 8000
+          "Port": 3000
         }
       ],
       "UpstreamPathTemplate": "/r/{id}",
@@ -28,6 +28,6 @@
 
   ],
   "GlobalConfiguration": {
-    "BaseUrl": "https://localhost:5000"
+    "BaseUrl": "https://localhost:1000"
   }
 }

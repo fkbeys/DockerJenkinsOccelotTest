@@ -13,7 +13,8 @@ services:
       - micro_net
       - int_net
   
-  s_contact_api: c_contact_api
+  s_contact_api: 
+    container_name: c_contact_api
     image: kaya/contactapi
     build: 
       context: .
@@ -23,7 +24,8 @@ services:
     networks:
       - int_net
 
-  s_reserv_api: c_reserv_api
+  s_reserv_api: 
+    container_name: c_reserv_api
     image: kaya/reservapi
     build: 
       context: .
@@ -34,9 +36,7 @@ services:
       - int_net
 
 
-
-
-
+       
 networks:
   int_net: 
     driver: overlay

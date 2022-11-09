@@ -19,7 +19,7 @@ namespace Contact.Api.Controllers
         public async Task<IActionResult> GetContactById(int id)
         {
 
-            var ss = "";
+            var ss = "x";
             var result = await contactService.GetById(id);
             return Ok(result);
         }

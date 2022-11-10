@@ -6,7 +6,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "c_contact_api",
-          "Port": 2000
+          "Port": 80
         }
       ],
       "UpstreamPathTemplate": "/c/{id}",
@@ -19,7 +19,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "c_reserv_api",
-          "Port": 3000
+          "Port": 80
         }
       ],
       "UpstreamPathTemplate": "/r/{id}",
